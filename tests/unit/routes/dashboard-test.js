@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'rabit-ember/tests/helpers';
 
-module('Unit | Route | Dashboard', function (hooks) {
+module('Unit | Route | dashboard', function (hooks) {
   setupTest(hooks);
 
   test('it exists', function (assert) {

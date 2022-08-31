@@ -2,6 +2,5 @@
   "application-template-wrapper": false,
   "default-async-observers": true,
   "jquery-integration": false,
-  "experimentalDecorators":true,
   "template-only-glimmer-components": true
 }
