@@ -1,5 +1,18 @@
-<div class="card w-half m-0">
-    <div class="card-tittle font-weight-medium">
-        <h5>Product performance</h5>
+<div class="card w-half m-0 border border-transparent" >
+    <div class="card-tittle font-weight-medium d-flex justify-content-between align-items-center">
+        <h5 class="d-inline ">Product performance</h5>
+        <h5 class="d-inline ">Revenue:{{this.Revenue}}</h5>
+        <h5 class="d-inline ">Level:{{this.Level}}</h5>
+        {{!-- drop down --}}
+        <div class="dropdown ">
+            <span  class="d-flex align-items-center pointer btn btn-link" data-toggle="dropdown"><span class="material-symbols-outlined">more_horiz</span></span>
+                <div class="dropdown-menu dropdown-menu-center">
+                   <LinkTo @route="dashboard" class="dropdow-items">home</LinkTo>
+                </div>
+        </div>
+            
     </div>
+     <svg  class="w-full h-450 dashbord_home_productperformance24_chart">
+        	<g {{did-insert this.svg  }}  transform="translate(300, 230)" class="performance"></g>
+     </svg>
 </div>

@@ -1,24 +1,32 @@
-<nav class=" h-100 mb-10">
-    <div class="row h-full">
-        <div class="col-2 ">
+<nav class=" h-50 ">
+    <div class="row h-full d-flex align-item-center">
+        {{!-- 1st half of header --}}
+        <div class="col-1 ">
                <div class="row h-full ">
-                <div class="col h-full border rounded border-transparent p-5">
-                    <img class="img-fluid rounded-circle" src="https://picsum.photos/200" alt=".">
+                <div class="col  h-full border rounded border-transparent p-5 ">
+                    <img class="img-fluid rounded-circle h-full"  src="https://picsum.photos/10" alt=".">
                 </div>
+                {{!-- space close to image --}}
                 <div class="col"></div>
             </div>
         </div>
-        <div class="col">
-            <Header::Date/>
+        {{!-- 1nd half of header --}}
+        <div class="col d-flex align-items-center h-full ">
+            <div class="col-7 h-full"><Header::SearchBar/></div>
+            <div class="col"><Header::Date/></div>
         </div>
-        <div class="col ">
-            <div class="row">
-                <div class="col-3 d-flex">
+        {{!-- 3rd half of header --}}
+        <div class="col h-full">
+            <div class="row h-full">
+                <div class="col-2 d-flex justify-content-around d-flex align-items-center h-full">
                   <Header::Home::home/> 
-                  <Header::Home::Settings/>
+                  {{!-- <Header::Home::Settings/> --}}
                 </div>
-                <div class="col"><Header::Notification::Container/></div>
-                 <div class="col-3"><Header::Lighting::Switch/></div>
+                <div class="col-5 h-full">
+                    <Header::Notification::Container/>
+                </div>
+                <div class="col"></div>
+                 <div class="col-2"><Header::Lighting::Switch/></div>
             </div>
         </div>
     </div>

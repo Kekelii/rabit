@@ -1,0 +1,14 @@
+/* nameing of class convention
+    1.name of route followed by component name and class name
+    2. All css files can be found in the route named css file
+    example dashbord_home_productperformance_charts
+*/
+
+.dashbord_home_productperformance24_chart path {
+    transition: ease-in-out 1.08s;
+    fill: pink
+}
+
+.dashbord_home_productperformance24_chart path:hover {
+    transform: scale(1.08);
+}
